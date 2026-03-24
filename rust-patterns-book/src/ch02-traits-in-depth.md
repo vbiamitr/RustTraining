@@ -90,9 +90,6 @@ the iterator rather than to the underlying collection:
 // }
 
 // With GATs (Rust 1.65+):
-// Note: This is a custom trait, distinct from std::iter::Iterator.
-// In real code, name it `LendingIterator` to avoid confusion with the
-// standard `Iterator` trait.
 trait LendingIterator {
     type Item<'a> where Self: 'a;
 
@@ -1802,4 +1799,3 @@ fn main() {
 </details>
 
 ***
-
