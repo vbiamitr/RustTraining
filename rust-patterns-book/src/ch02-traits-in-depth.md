@@ -391,9 +391,9 @@ fn main() {
     }
 
     // Size comparison:
-    println!("size_of::<&Circle>()        = {}", std::mem::size_of::<&Circle>());
+    println!("size_of::<&Circle>()        = {}", size_of::<&Circle>());
     // → 8 bytes (one pointer — the compiler knows the type)
-    println!("size_of::<&dyn Drawable>()  = {}", std::mem::size_of::<&dyn Drawable>());
+    println!("size_of::<&dyn Drawable>()  = {}", size_of::<&dyn Drawable>());
     // → 16 bytes (data_ptr + vtable_ptr)
 }
 ```
