@@ -81,6 +81,13 @@ Install [Rust via **rustup**](https://rustup.rs/) if you haven't already, then:
 cargo install mdbook@0.4.52 mdbook-mermaid@0.14.0
 ```
 
+### Clone the repo
+
+```bash
+git clone https://github.com/microsoft/RustTraining.git
+cd RustTraining
+```
+
 ### Build & serve
 
 ```bash
